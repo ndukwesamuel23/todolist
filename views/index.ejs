@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+<style>
+    input{
+        border-radius: 10xpx;
+    }
+</style>
+   
+<h1>  <%= kingofday %> todo list !</h1>
+<ul>
+<% for (var i=0; i<newlistitems.length; i++) { %>
+    <li><%= newlistitems[i] %></li>
+<% } %>
+
+</ul>
+
+
+
+
+
+<form action="/v" method="POST">
+
+    <input type="text" name="newlist" placeholder="enter todo">
+
+    <button type="submit" name="button">add</button>
+
+</form>
+
+</body>
+</html>
