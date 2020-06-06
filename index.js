@@ -58,6 +58,6 @@ app.post("/v",function(req, res){
 
 // this what server will lsiten
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("server is running baba on prot 3000")
 })
